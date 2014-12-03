@@ -1,0 +1,67 @@
+*{ margin: 0; padding: 0;}
+li{ list-style: none;}
+a{text-decoration: none;}
+
+.bk{ width: 1000px; height: 100px; overflow: hidden;}
+
+
+.this_wrap{ background: url(../images/bk/all_bk.png); width: 100%; }
+.header{ background:url(../images/bk/top_bk.jpg) no-repeat center; height: 541px; width: 100%;}
+
+.content_box{ width: 1000px; overflow: hidden; margin:130px auto 60px; position: relative;}
+.bk01{ background: url(../images/bk/bk01.jpg); width: 1000px; height: 100px;}
+.bk02{ background: url(../images/bk/bk02.jpg); width: 1000px; height: 100px;}
+.bk03{ background: url(../images/bk/bk03.jpg); width: 1000px; height: 100px;}
+.bk04{ background: url(../images/bk/bk04.jpg); width: 1000px; height: 100px;}
+.bk05{ background: url(../images/bk/bk05.jpg); width: 1000px; height: 100px;}
+.bk06{ background: url(../images/bk/bk06.jpg); width: 1000px; height: 100px;}
+.bk07{ background: url(../images/bk/bk07.jpg); width: 1000px; height: 100px;}
+.bk08{ background: url(../images/bk/bk08.jpg); width: 1000px; height: 100px;}
+.bk09{ background: url(../images/bk/bk09.jpg); width: 1000px; height: 100px;}
+.bk10{ background: url(../images/bk/bk10.jpg); width: 1000px; height: 100px;}
+.bk11{ background: url(../images/bk/bk11.jpg); width: 1000px; height: 100px;}
+.bk12{ background: url(../images/bk/bk12.jpg); width: 1000px; height: 100px;}
+.bk13{ background: url(../images/bk/bk13.jpg); width: 1000px; height: 100px;}
+.bk14{ background: url(../images/bk/bk14.jpg); width: 1000px; height: 100px;}
+.bk15{ background: url(../images/bk/bk15.jpg); width: 1000px; height: 100px;}
+.bk16{ background: url(../images/bk/bk16.jpg); width: 1000px; height: 100px;}
+.bk17{ background: url(../images/bk/bk17.jpg); width: 1000px; height: 100px;}
+.bk18{ background: url(../images/bk/bk18.jpg); width: 1000px; height: 100px;}
+.bk19{ background: url(../images/bk/bk19.jpg); width: 1000px; height: 100px;}
+.bk20{ background: url(../images/bk/bk20.jpg); width: 1000px; height: 100px;}
+.bk21{ background: url(../images/bk/bk21.jpg); width: 1000px; height: 100px;}
+.bk22{ background: url(../images/bk/bk22.jpg); width: 1000px; height: 100px;}
+.bk23{ background: url(../images/bk/bk23.jpg); width: 1000px; height: 100px;}
+
+
+.p_content{ width: 100%; height: 100%; position: relative; font-family: "微软雅黑";}
+.p_content .p_more{font-size: 14px;  color:#2b4bb1; position: absolute; right: 0px; bottom: 7px;}
+.park01{ width: 402px; position: absolute; top:140px; right: 100px; }
+.p_content p{ font-size: 14px; line-height: 28px; text-indent: 28px;}
+
+.park02{ width: 402px; position: absolute; left: 100px; top: 570px;}
+.park03{ width: 402px; position: absolute; right: 100px; top: 1080px;}
+.park04{width: 402px; position: absolute; left: 100px; bottom: 150px;}
+
+
+
+.scroll_img{width: 900px; margin: auto; overflow: hidden;}
+.big_img_box{ width: 900px; height: 500px; overflow: hidden; position: relative}
+.big_img_box ul{ width: 5000px; position: absolute; left: 0px; top: 0px;}
+.big_img_box ul li{ float: left; width: 900px; height: 500px;}
+.sm_img_box ul li{ width: 218px; height: 120px; overflow: hidden;  border:#d0d0d0 solid 1px; float: left; 
+margin:5px 6px 5px 0px;}
+.sm_img_box ul li.current{ border: #a8a6a6 solid 1px;}
+.btn_lfet,.btn_right{ display: block; width: 30px; height: 152px; background-image: url(../images/btn.png); position:absolute; top: 160px; background-position: 0px 0px;}
+.btn_lfet{ left: 20px;}
+.btn_right{ background-position: -32px 0px; right: 20px;}
+.btn_lfet:hover{ background-position:0px -152px ;}
+.btn_right:hover{background-position: -32px -152px; }
+
+.footer{ width: 100%; height: 133px; background: url(../images/bk/bootom_bk.jpg) no-repeat center; }
+
+
+
+
+
+
