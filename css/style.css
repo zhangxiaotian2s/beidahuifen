@@ -50,7 +50,7 @@ a{text-decoration: none;}
 .big_img_box ul{ width: 5000px; position: absolute; left: 0px; top: 0px;}
 .big_img_box ul li{ float: left; width: 900px; height: 500px;}
 .sm_img_box ul li{ width: 218px; height: 120px; overflow: hidden;  border:#d0d0d0 solid 1px; float: left; 
-margin:5px 6px 5px 0px;}
+margin:5px 6px 5px 0px; display:inline}
 .sm_img_box ul li.current{ border: #a8a6a6 solid 1px;}
 .btn_lfet,.btn_right{ display: block; width: 30px; height: 152px; background-image: url(../images/btn.png); position:absolute; top: 160px; background-position: 0px 0px;}
 .btn_lfet{ left: 20px;}
