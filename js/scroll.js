@@ -62,6 +62,10 @@
 		    	_btnul.animate({"left":-_btnulchild_with*(_btnulchild.length-Parameter.Btnshownum)},Parameter.OverTime)
 		    	
 		    }
+			if(num<=0){
+				_btnul.animate({"left":0},Parameter.OverTime)
+				
+				}
 			
 			
 		}
