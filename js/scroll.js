@@ -9,6 +9,8 @@
 			rightbtn:null,
 			Titleul:null,     //显示标题的UL 的名称
 			Btnul :null,    //设置按钮的UL 类名 
+			Btntype:0,
+			Btnshownum:null,
 			BannerBtnclass: "curBtn",  //设置激活时按钮的类名
 			isAutomatic: 0,   //自动执行效果的开关
 			deomShownum:1, //滚动框架内要显示的滚动的子元素的个数 0表示一个默认是0,此阀值是为了处理滚动样式下框架可显示多个时滚动到最后出现                           //的滚动空白，保证最后一个显示的情况下直接滚动回第一个
@@ -35,11 +37,35 @@
 			
 		//获取& 按钮处理的方法
 		function btnFn(num){
-			if(Parameter.Btnul){
-			var _Btnul=$(Parameter.Btnul);
-			_Btnul.children("li").removeClass(Parameter.BannerBtnclass).eq(num).addClass(Parameter.BannerBtnclass);
+		
+			switch(Parameter.Btntype){
+		     case 0:
+			 var _btnul=$(Parameter.Btnul);
+			  _btnul.children("li").removeClass(Parameter.BannerBtnclass).eq(num).addClass(Parameter.BannerBtnclass);
+			  break;
+				case 1:
+				fn_btnscoll(num);
+				break;
 			}
+			
 		}
+		//btntype=1时即btn 也滚动的效果处理
+		function fn_btnscoll(num){
+			var  _btnul=$(Parameter.Btnul);
+			var  _btnulchild=_btnul.children("li");
+			var  _btnulchild_with=_btnulchild.outerWidth(true);
+		         _btnulchild.removeClass(Parameter.BannerBtnclass).eq(num).addClass(Parameter.BannerBtnclass);
+		    if(num>=Parameter.Btnshownum-2&&num<_btnulchild.length-3){
+				_btnul.animate({"left":-_btnulchild_with*(num-1)},Parameter.OverTime)
+			}
+		    if(num>=_btnulchild.length-3){
+		    	_btnul.animate({"left":-_btnulchild_with*(_btnulchild.length-Parameter.Btnshownum)},Parameter.OverTime)
+		    	
+		    }
+			
+			
+		}
+		
 		//获取 &标题处理方法
 		function titFn(num){
 			if(Parameter.Titleul){
@@ -118,15 +144,14 @@
 			titFn(i);
 		}
 		//鼠标划过按钮的处理
+		
 		if(Parameter.Btnul){
-			var _Btnul=$(Parameter.Btnul);
-		    _Btnul.children("li").hover(function(){
-			clearInterval(timer);
+			var _btnul=$(Parameter.Btnul);
+            _btnul.children("li").bind("click",function(){
+            clearInterval(timer);
 			btnStart($(this).index());	
-		},
-		function() {
-			Automatic();
-		})
+            })
+			
 		}
 		//单个图片滚动的按钮处理
 //		function singleBtnfn(){

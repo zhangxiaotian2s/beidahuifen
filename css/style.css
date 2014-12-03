@@ -47,8 +47,10 @@ a{text-decoration: none;}
 
 .scroll_img{width: 900px; margin: auto; overflow: hidden;}
 .big_img_box{ width: 900px; height: 500px; overflow: hidden; position: relative}
-.big_img_box ul{ width: 5000px; position: absolute; left: 0px; top: 0px;}
-.big_img_box ul li{ float: left; width: 900px; height: 500px;}
+.big_img_box ul{ width: 15000px; position: absolute; left: 0px; top: 0px;}
+.big_img_box ul li{ float: left; width: 900px; height: 500px; overflow: hidden;}
+.sm_img_box{ width: 900px; height: 120px; overflow: hidden; position: relative;}
+.sm_img_box ul{ width:4000px;  position: absolute; left: 0px; top: 0px;}
 .sm_img_box ul li{ width: 218px; height: 120px; overflow: hidden;  border:#d0d0d0 solid 1px; float: left; 
 margin:5px 6px 5px 0px; display:inline}
 .sm_img_box ul li.current{ border: #a8a6a6 solid 1px;}
